@@ -1,0 +1,19 @@
+<form class="container alineador" [formGroup]="loginForm">
+    <div class="alineador-item">
+        <p-card header="Acceso">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                <input type="text" pInputText formControlName="usuario"/>
+            </div>
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-key"></i></span>
+                <input type="password" pInputText formControlName="contrasenia"/>
+            </div>
+            <ng-template pTemplate="footer">
+                <p-button label="Autenticar" [disabled]="loginForm.invalid" (click)="validar()" ></p-button>
+            </ng-template>
+        </p-card>
+    </div>
+</form>
+<div class="container fondo imagen-fondo"></div>
+<div class="container fondo color-fondo"></div>
