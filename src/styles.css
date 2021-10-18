@@ -6,4 +6,6 @@ html, body {
     background-color: var( --surface-ground );
     font-family: var( --font-family );
     color: var(--text-color);
+    position: fixed;
+    overflow: auto;
 }

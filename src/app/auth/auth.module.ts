@@ -5,6 +5,7 @@ import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
 import { AuthRoutingModule } from './auth-routing.module';
 import { InputTextModule } from 'primeng/inputtext';
+import { DialogModule } from 'primeng/dialog';
 import { CardModule } from 'primeng/card'
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -21,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardModule,
     InputTextModule,
     PasswordModule,
+    DialogModule,
     ButtonModule
   ]
 })
