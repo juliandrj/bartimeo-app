@@ -9,3 +9,11 @@ html, body {
     position: fixed;
     overflow: auto;
 }
+
+.mapa .mapboxgl-popup-content {
+    background-color: var( --surface-ground );
+}
+
+.p-panelmenu .p-panelmenu-header.p-highlight:not(.p-disabled) > a:hover {
+    background-color: var( --surface-ground );
+}

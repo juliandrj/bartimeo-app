@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MainRoutingModule } from './main-routing.module';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PrimeNGModule } from '../prime-ng/prime-ng.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { PrimeNGModule } from '../prime-ng/prime-ng.module';
   imports: [
     CommonModule,
     MainRoutingModule,
+    FormsModule,
     PrimeNGModule
   ]
 })

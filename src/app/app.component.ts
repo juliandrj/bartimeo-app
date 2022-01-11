@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import * as mapboxgl from 'mapbox-gl';
 import { PrimeNGConfig } from 'primeng/api';
+import { environment } from 'src/environments/environment';
 import { LoginService } from './auth/services/login.service';
 
 @Component({
@@ -17,6 +19,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.primeNGConfig.ripple = true;
+    (mapboxgl as any).accessToken = environment.mapboxToken;
     if (this.loginService.identificarSesion()) {
       this.router.navigate(['/main/dashboard/']);
     }
